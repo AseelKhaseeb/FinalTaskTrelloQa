@@ -21,6 +21,15 @@ class SharedDataUtils {
             body: {name: cardName}
         })
     }
+
+    createTemplate = (listId,templateCardName)=>{
+        return cy.request({
+            method: "POST",
+            url: `https://api.trello.com/1/cards?idList=${listId}&key=${APIKEY}&token=${APITOKEN}`,
+            header: "Accept: application/json",
+            body: {name: templateCardName, isTemplate: true}
+        })
+    }
 }
 
 export default SharedDataUtils
