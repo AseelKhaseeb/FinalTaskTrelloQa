@@ -9,7 +9,7 @@ const sharedDataUtils = new SharedDataUtils()
 
 const boardName = "CypressBoard"
 const templateCardName = "TemplateCardBoard"
-const newTemplateCardName = "TemplateCardBoard"+Math.floor(Math.random()*10)
+const newTemplateCardName = "NewTemplateCardBoard"
 const updateTemplateNameActions = new UpdateTemplateNameActions()
 const updateTemplateNameAssertions = new UpdateTemplateNameAssertions()
 

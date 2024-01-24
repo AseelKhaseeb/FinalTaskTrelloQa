@@ -7,6 +7,8 @@ module.exports = defineConfig({
       // implement node event listeners here
       on("file:preprocessor", cucumber());
     },
-    screenshotsFolder:"MySCreenshots", 
+    screenshotsFolder:"MySCreenshots",
+    video:true,
+    videosFolder:"MyVideos"
   },
 });
