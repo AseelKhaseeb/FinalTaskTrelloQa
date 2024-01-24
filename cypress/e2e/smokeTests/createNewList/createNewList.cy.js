@@ -20,6 +20,7 @@ Before(()=>{
 Given("The user navigated to board",()=>{
     cy.get("@boardResponse").then((data)=>{
         sharedActions.openBoard(data.body.url)
+        cy.screenshot({capture:"fullPage"})
     })
 })
 
