@@ -8,8 +8,8 @@ class UpdateTemplateNameActions{
     }
 
     entersANewTitleForTheTemplateCard(newTemplateCardName){
-        cy.get(".window-title textarea").clear().type(newTemplateCardName)
         cy.wait(1000)
+        cy.get(".window-title textarea").clear().type(newTemplateCardName)
     }
 
     clicksOnCloseAnchor(){

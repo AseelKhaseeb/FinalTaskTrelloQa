@@ -9,6 +9,7 @@ module.exports = defineConfig({
     },
     screenshotsFolder:"MySCreenshots",
     video:true,
-    videosFolder:"MyVideos"
+    videosFolder:"MyVideos",
+    videoCompression:0
   },
 });
